@@ -1,3 +1,6 @@
+import React from "react";
+import { IonIcon } from "@ionic/react";
+import { logoFacebook, logoTwitter, logoInstagram } from "ionicons/icons";
 import { GiCalendar, GiClawSlashes, GiMailbox, GiMayanPyramid, GiPhone } from "react-icons/gi";
 
 const Aside = () => {
@@ -6,7 +9,7 @@ const Aside = () => {
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img
-              src={"/images/mamun.jpg"}
+              src={"https://i.ibb.co/WK7W7fR/My-Photo.jpg"}
               alt="Richard hanrick"
               width="80"
             />
@@ -14,10 +17,10 @@ const Aside = () => {
 
           <div className="info-content">
             <h1 className="name" title="Richard hanrick">
-              Md AL Mamun
+              Kumar Aditya
             </h1>
 
-            <p className="title">Web developer</p>
+            <p className="title">Software developer</p>
           </div>
 
           <button className="info_more-btn" data-sidebar-btn>
@@ -41,7 +44,7 @@ const Aside = () => {
                 <p className="contact-title">Email</p>
 
                 <a href="mailto:richard@example.com" className="contact-link">
-                  richard@example.com
+                  kumaraditya18027@gmail.com
                 </a>
               </div>
             </li>
@@ -55,7 +58,7 @@ const Aside = () => {
                 <p className="contact-title">Phone</p>
 
                 <a href="tel:+12133522795" className="contact-link">
-                  +1 (213) 352-2795
+                  +91 9128791932
                 </a>
               </div>
             </li>
@@ -69,7 +72,7 @@ const Aside = () => {
               <div className="contact-info">
                 <p className="contact-title">Birthday</p>
 
-                <time dateTime="1982-06-23">June 23, 1982</time>
+                <time dateTime="1982-06-23">July 22,2003</time>
               </div>
             </li>
 
@@ -82,7 +85,7 @@ const Aside = () => {
               <div className="contact-info">
                 <p className="contact-title">Location</p>
 
-                <address>Sacramento, California, USA</address>
+                <address>Kolkata,West Bengal,India</address>
               </div>
             </li>
           </ul>

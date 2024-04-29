@@ -8,7 +8,7 @@ const servicesData = [
   {
     icon: "/images/icon-design.svg",
     title: "Web design",
-    description: "The most modern and high-quality design made at a professional level."
+    description: "The most modern and high-quality design made using figma."
   },
   {
     icon: "/images/icon-dev.svg",
@@ -21,15 +21,16 @@ const servicesData = [
     description: "Professional development of applications for iOS and Android."
   },
   {
-    icon: "/images/icon-photo.svg",
-    title: "Photography",
-    description: "I make high-quality photos of any category at a professional level."
+    icon: "/images/icon-globe.png",
+    title: "Geopolitics",
+    description: "Analysing the current global situation and its imoact on buisness and daily life."
   }
 ];
 
 
 const About = () => {
   const [testimonials , setTestimonials ] = useState([]);
+  const [selectedTestinomials,setSelectedTestinomials]=useState(null);
   useEffect(()=> {
     fetch('testimonials.json').then(res => res.json()).then(data => {
       console.log(data)
@@ -45,17 +46,13 @@ const About = () => {
 
     <section className="about-text">
       <p>
-        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-        I enjoy
-        turning complex problems into simple, beautiful and intuitive designs.
+      Hey there! I'm a software developer,With a strong foundation in Data Structures and Algorithm,
+      I thrive in solving complex problems with elegant solutions
       </p>
 
       <p>
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        Moreover, I
-        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-        across your
-        message and identity in the most creative way. I created web design for many famous brand companies.
+      Currently, I'm deeply involved in crafting applications using the MERN stack, From building intuitive user interfaces with React.js to architecting robust backend systems with Node.js, 
+      I'm passionate about leveraging cutting-edge technologies to create scalable and efficient solutions.
       </p>
     </section>
 
